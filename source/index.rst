@@ -3,14 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SIMcheck_Manual's documentation!
-===========================================
+SIMcheck Manual
+===============
+
+SIMcheck is a package of ImageJ tools for assessing the quality and reliability 
+of Structured Illumination Microscopy (SIM) data. It should work with any
+fairly recent ImageJ version, and can be installed by copying the
+``SIMcheck_.jar`` file into your plugins folder and restarting ImageJ. The
+Quick Start guide below describes how to begin using SIMcheck.
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
 
+   quickstart
+   raw_data_checks
+   SIR_data_checks
+   cal_checks
+   utils
+   developer
 
 
 Indices and tables

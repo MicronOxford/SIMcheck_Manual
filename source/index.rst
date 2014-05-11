@@ -10,7 +10,9 @@ SIMcheck is a package of ImageJ tools for assessing the quality and reliability
 of Structured Illumination Microscopy (SIM) data. It should work with any
 fairly recent ImageJ version, and can be installed by copying the
 ``SIMcheck_.jar`` file into your plugins folder and restarting ImageJ. The
+
 Quick Start guide below describes how to begin using SIMcheck.
+=======
 
 Contents:
 

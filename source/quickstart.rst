@@ -1,6 +1,10 @@
 Quick Start
 ===========
 
+SIMcheck is implemented as an ImageJ plugin bundle consisting of the main 
+"SIMcheck" Dialog, which assembles the required inputs and run multiple 
+checks; and the individual checks, which may also be run as stand-alone plugins.
+
 To get started, after installing the Plugin, you need to open two
 datasets: the raw SI data file, and the corresponding reconstructed
 SIR file. Next choose "Run SIMcheck" from the new "SIMcheck" submenu

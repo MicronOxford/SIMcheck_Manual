@@ -26,6 +26,7 @@ Contents:
    cal_checks
    utils
    theory_gloss
+   SI_systems
    developer
 
 

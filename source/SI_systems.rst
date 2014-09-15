@@ -1,12 +1,12 @@
 SI Microscopy Systems
 =====================
 
-API OMX
--------
+OMX
+---
 
-The API OMX systems, based on a prototypes built in the lab of John Sedat at UCSF, all share a common data acquisition scheme and file format. OMX microscopes use the MRC file format which was adapted for the DeltaVision family of wide-field deconvolution microscopes (also originating at UCSF in the Sedat and Agard labs), as described in the online documentation of their Priism image processing package (which, incidentally, forms the basis for API's SoftWoRx, and is still being developed).
+The OMX systems from GE Healthcare (formerly API) are based on a prototype built in the lab of John Sedat at UCSF. All versions share a common file format: this is an MRC file format adapted for the DeltaVision family of wide-field deconvolution microscopes (also originating at UCSF in the Sedat and Agard labs), as described in the online documentation of their Priism image processing package.
 
-Data are acquired in several different schemes by the different versions of OMX microscope, but all are stored in a "CPZAT" dimension order: i.e. channel, then phase, then Z-plane, then angle, then time frame. When opening such data in ImageJ, one usually sees all phases and angles subsumed into the Z dimension, meaning Zobserved=P*Zreal*A, with phase varying fasest, then real Z, and finally the angle. Note that bleaching dependent on the true order of data acquisition may well be apparent when using the "SI Z-profile" check described below. OMX miscroscopes invariably acquire 3 angles and 5 phases of the illumination pattern.
+Data are acquired in several different schemes by the different versions of OMX microscope, but all are stored in a "CPZAT" dimension order: i.e. channel, then phase, then Z-plane, then angle, then time frame. When opening such data in ImageJ, one usually sees all phases and angles subsumed into the Z dimension, meaning Zobserved=P*Zreal*A, with phase varying fasest, then real Z, and finally the angle. Note that bleaching, dependent on the true order of data acquisition, may well be apparent when using the "Channel Intensity Profiles" check. OMX microscopes invariably acquire 3 angles and 5 phases of the illumination pattern.
 
 Zeiss ELYRA
 -----------
@@ -20,4 +20,4 @@ In this case, the resulting hyperstack will have the phases and angles subsumed 
 Nikon N-SIM
 -----------
 
-Nikon N-SIM raw data are stored as tiled images in .nd2 files; where phases are tiled in the x-direction, angles in the y-direction. The format converter is untested for 3D data.
+Nikon N-SIM raw data are stored as tiled images in .nd2 files; where phases are tiled in the x-direction, angles in the y-direction.

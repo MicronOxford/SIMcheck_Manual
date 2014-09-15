@@ -1,7 +1,13 @@
 SIM Theory and Glossary of Terms
 ================================
 
-Structured illumination Microscopy...
+<<TODO: brief history & theory of SIM>>
+
+Glossary of Terms & Abbreviations
+---------------------------------
+
+**SIM**
+    Structured illumination Microscopy
 
 References
 ----------

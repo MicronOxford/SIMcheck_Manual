@@ -1,39 +1,43 @@
 Raw Data Checks
 ===============
 
-Angle Difference
-----------------
+Channel Intensity Profiles (CIP)
+--------------------------
 
-This check shows features that move/float in-between recording data for
+Average intensity is plotted for each plane (in the order: Phase, Z, Angle,
+Time) where each channel is assigned an arbitrary color: 1st channel = red,
+2nd = green, 3rd = blue. This helps judge bleaching and whether all angles show
+a similar intensity (as they should). Statistics reported are:-
+
+- estimated intensity decay
+- maximum intensity difference between angles
+
+Motion & Illumination Variation (MIV)
+-------------------------------
+
+This check highlights features that change in-between recording data for
 different angles. Each angle (assumes 3!) is assigned a color: Cyan, Magenta,
 or Yellow, meaning that if a feature is present in all angles it will appear
 C+M+Y=White, or will exhibit the color of a specific angle(s) if not (the
 color scheme chosen here is intended to make the distinction between angles
 and channels clear). The reconstruction algorithm assumes that all features
 are sampled at each angle, and features that move or experience different
-illumination intensity for different phases or angles will result in
+illumination intensity for different angles (or phases) will result in
 artifacts.
 
-Intensity Profiles
-------------------
+Fourier Projections (FPJ)
+-------------------
 
-Average intensity is plotted for each plane (in the order: phase, Z, angle,
-time) where each channel is assigned an arbitrary color: 1st channel = blue,
-2nd = green, 3rd = red. This helps judge bleaching and whether all angles show
-a similar intensity (as they should).
-
-Fourier Plots
--------------
-
-2D Fourier Transforms of each image slice are displayed, split into separate
-hyperstacks according to angle. NB. results contain a "Z" dimension that is
-actually phase then Z; there are sliders for channels and time. Where
-features are in focus and their intensities are modulated by the
+2D Fourier Transforms are taken and displayed as a montage of projections
+over Phase and Z for each Angle. There are sliders for channel and time.
+Where features are in focus and their intensities are modulated by the
 illumination pattern, 2D FFTs of each plane in the raw SI data should show
-1st and hopefully 2nd order spots along a line perpendicular to the angle
-of illumination pattern stripes.
+1st and 2nd order spots along a line perpendicular to the angle of
+illumination pattern stripes. Blurred, missing or extra spots may indicate
+problems with the illumination pattern (although sparse samples may lack
+clear spots in the FFT).
 
-Modulation Contrast
+Modulation Contrast (MCN)
 -------------------
 
 The Modulation Contrast-to-Noise Ratio (MCNR) is a ratio of SI illumination

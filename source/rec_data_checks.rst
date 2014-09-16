@@ -1,8 +1,8 @@
 Reconstructed Data Checks
 =========================
 
-SIR histogram
--------------
+Reconstructed Intensity Histogram (RIH)
+---------------------------------
 
 Overlays linear and logarithmic histograms showing relative contribution of
 negative values to the SI-Reconstructed result for each channel. Ratio of
@@ -11,16 +11,8 @@ reconstruction artifacts. Where the ratio of positive to negative values at
 the histogram extremes is less than 5-10, this indicates a poor
 reconstruction.
 
-SIR Z Variation
----------------
-
-This check plots the minimum, and the mean value in each slice; and summarizes
-the standard deviation of the minimum value normalized by the stack mode
-intensity. Large variations in the minimum value relative to the average
-indicate refractive index mismatch or poor illumination pattern Z focus.
-
-SIR Fourier plot
-----------------
+Fourier plots (FTL, FTR, FTO)
+-------------
 
 Plots a 2D Fourier transform "target" plots showing resolution lines and
 color-coded with a LUT to make relative proportion of different frequencies
@@ -33,8 +25,8 @@ spots in the spectrum. Note that this check has the caveat that it is an
 average for the volume, so if the ROI includes more background than signals of
 interest it will be less meaningful.
 
-SIR Mod Contrast map
---------------------
+Modulation Contrast Map (MCM)
+-----------------------
 
 This produces an RGB image displaying a combination of intensity information
 and modulation contrast calculated from the raw data. Values 0-255 correspond

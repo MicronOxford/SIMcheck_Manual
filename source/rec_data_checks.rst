@@ -2,7 +2,7 @@ Reconstructed Data Checks
 =========================
 
 Reconstructed Intensity Histogram (RIH)
----------------------------------
+---------------------------------------
 
 Overlays linear- and logarithmic-scaled intensity histograms (black and gray,
 respectively) showing relative contribution of "negative" values to the
@@ -16,7 +16,7 @@ background versus features in the image). Where the ratio is less than 5-10,
 this generally indicates a poor reconstruction.
 
 Fourier plots (FTL, FTR, FTO)
--------------
+-----------------------------
 
 Displays 2D Fourier transform "target" plots with resolution lines (in Microns)
 and optionally blurred and color-coded with a 16-color Look-Up Table to make
@@ -44,7 +44,7 @@ Fourier Transform result from mode to maximum may be turned off; and the blur /
 false-color look-up table option may be turned on.
 
 Modulation Contrast Map (MCM)
------------------------
+-----------------------------
 
 This plugin produces an RGB image displaying a combination of intensity
 information and modulation contrast calculated from the raw data: i.e. the

@@ -2,7 +2,7 @@ Raw Data Checks
 ===============
 
 Channel Intensity Profiles (CIP)
---------------------------
+--------------------------------
 
 Average intensity is plotted for each plane (in the order: Phase, Z, Angle,
 Time) where each channel is assigned an arbitrary color: 1st channel = red,
@@ -13,7 +13,7 @@ a similar intensity (as they should). Statistics reported are:-
 - maximum intensity difference between angles
 
 Motion & Illumination Variation (MIV)
--------------------------------
+-------------------------------------
 
 This check highlights features that change in-between recording data for
 different angles. Each angle (assumes 3!) is assigned a color: Cyan, Magenta,
@@ -26,7 +26,7 @@ illumination intensity for different angles (or phases) will result in
 artifacts.
 
 Fourier Projections (FPJ)
--------------------
+-------------------------
 
 2D Fourier Transforms are taken and displayed as a montage of projections
 over Phase and Z for each Angle. There are sliders for channel and time.
@@ -38,7 +38,7 @@ problems with the illumination pattern (although sparse samples may lack
 clear spots in the FFT).
 
 Modulation Contrast (MCN)
--------------------
+-------------------------
 
 The Modulation Contrast-to-Noise Ratio (MCNR) is a ratio of SI illumination
 pattern strength to noise strength - values less than 3 are inadequate
@@ -68,8 +68,8 @@ The actual calculation carried out is, for each voxel in the real 3D image:
 #. The power of the frequency components corresponding to the illumination
    pattern modulation are divided by the average of the highest frequency
    component for the same Z plane (taken to be dominated by noise). The position
-   of the modulation frequency component is given by: 
-     ``vector_length * order / phases``
+   of the modulation frequency component is given by
+   ``vector_length * order / phases``
 
 #. values of "MCNR" that are consistent with satisfactory versus
    unsatisfactory reconstructions were determined empirically, but are in

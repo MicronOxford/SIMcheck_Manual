@@ -44,7 +44,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'SIMcheck'
-copyright = u'2014, Graeme Ball and Micron Oxford'
+copyright = u'2014, Graeme Ball and Lothar Schermelleh (Micron Oxford)'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the

@@ -28,7 +28,8 @@ when run standalone you can specify a previously-calculated MCNR image.
 discard them (if you must) until later. Click on the OK button to start
 running the checks. Next choose "Run SIMcheck" from the "SIMcheck" submenu
 in your Plugins menu. Output images will be displayed, and statistics and
-information will appear in the ImageJ log window.
+information will appear in the ImageJ log window. Finally, a Results window
+containing a summary of the key numerical statistics is displayed.
 
 SIMcheck should be able to handle handle multi-channel data and time
 series, but for large datasets you may find it best to split channels

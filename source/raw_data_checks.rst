@@ -7,10 +7,8 @@ Channel Intensity Profiles (CIP)
 Average intensity is plotted for each plane (in the order: Phase, Z, Angle,
 Time) where each channel is assigned an arbitrary color: 1st channel = red,
 2nd = green, 3rd = blue. This helps judge bleaching and whether all angles show
-a similar intensity (as they should). Statistics reported are:-
-
-- estimated intensity decay
-- maximum intensity difference between angles
+a similar intensity (as they should). A statistic summarising intensity
+fluctuations over the reconstruction window (9z) for the central slice
 
 Motion & Illumination Variation (MIV)
 -------------------------------------
@@ -23,7 +21,8 @@ color scheme chosen here is intended to make the distinction between angles
 and channels clear). The reconstruction algorithm assumes that all features
 are sampled at each angle, and features that move or experience different
 illumination intensity for different angles (or phases) will result in
-artifacts.
+artifacts. Normalised Root Mean Squared Error between the intensity information
+in the different angles is also reported.
 
 Fourier Projections (FPJ)
 -------------------------

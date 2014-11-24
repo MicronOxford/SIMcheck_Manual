@@ -24,7 +24,8 @@ the relative proportion of different frequencies more obvious. The plots
 displayed are: "Fourier Transform Lateral (FTL)" for XY sections; "Fourier
 Transform Radial (FTR)" which is a radial (circularly-averaged) profile though
 the XY Fourier Trasform; and "Fourier Transform Orthogonal (FTO)" for the
-central resliced XZ section.  These plots help judge the average resolution in
+central resliced XZ section (N.B. ensure the central Y point contains some
+features of interest). These plots help judge the average resolution in
 the sample volume, limited by noise. A gradual decay of frequencies from the
 center (lowest frequency) to the edge (highest frequency and resolution)
 indicates real high resolution information; whereas a flat spectrum indicates

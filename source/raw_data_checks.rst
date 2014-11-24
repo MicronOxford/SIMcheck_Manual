@@ -34,7 +34,9 @@ illumination pattern, 2D FFTs of each plane in the raw SI data should show
 1st and 2nd order spots along a line perpendicular to the angle of
 illumination pattern stripes. Blurred, missing or extra spots may indicate
 problems with the illumination pattern (although sparse samples may lack
-clear spots in the FFT).
+clear spots in the FFT). Note that images with XY sizes that are not a power
+of 2 (256x256, 512x512 and so on are power of 2) require padding, which may
+lead to inferior results.
 
 Modulation Contrast (MCN)
 -------------------------

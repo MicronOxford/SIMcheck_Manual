@@ -51,7 +51,7 @@ copyright = u'2014, Graeme Ball and Lothar Schermelleh (Micron Oxford)'
 # built documents.
 #
 # The short X.Y version.
-version = '0.9.5'
+version = '0.9.6'
 # The full version, including alpha/beta/rc tags.
 release = '0.9.5'
 

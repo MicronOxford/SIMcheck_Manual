@@ -1,3 +1,5 @@
+.. _si-systems:
+
 SI Microscopy Systems
 =====================
 

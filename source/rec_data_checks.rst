@@ -8,12 +8,23 @@ Overlays linear- and logarithmic-scaled intensity histograms (black and gray,
 respectively) showing relative contribution of "negative" values to the
 reconstructed result for each channel. Negative values are those below the
 modal intensity value for background regions, and are due to reconstructed
-noise and ringing artefacts at the edge of high-intensity features.
-The ratio of positive to negative values at the histogram extrema is reported:
-i.e. only a small percentage of the highest and lowest intensities (this
-increases the robustness of the statistic to differences in the proprtion of
-background versus features in the image). Where the ratio is less than 5-10,
-this generally indicates a poor reconstruction.
+noise and ringing artefacts at the edge of high-intensity features.  The
+``max-to-min intensity ratio`` (positive versus negative values at the
+histogram extrema) is reported: i.e. only a small percentage of the highest and
+lowest intensities (this increases the robustness of the statistic to
+differences in the proprtion of background versus features in the image). Where
+the ratio is less than 5-10, this generally indicates a poor reconstruction.
+
+Spherical Aberration Mismatch (SAM)
+-----------------------------------
+
+``This check is not enabled by default, as it requires an appropriate sample``,
+e.g. a bead lawn, to work reliably.  It plots the minimum and the mean value in
+each slice, and summarizes the standard deviation of the minimum value
+normalized by the stack mode intensity, the ``Z Minimum Variation`` (ZMV).
+Large variations in the minimum value relative to the average indicate mismatch
+between the spherical aberration present when the sample and point spread
+function data were acquired.
 
 Fourier plots (FTL, FTR, FTO)
 -----------------------------
@@ -31,7 +42,7 @@ center (lowest frequency) to the edge (highest frequency and resolution)
 indicates real high resolution information; whereas a flat spectrum indicates
 only noise at the higher frequencies. The lateral (FTL) and radial (FTR) plots
 give an indication on XY resolution, while the orthogonal (FTO) plot reports on
-Z resolution as well.  Reconstruction artifacts may also be apparent as spots
+Z resolution as well. Reconstruction artifacts may also be apparent as spots
 in the Fourier spectrum, which are observed as regular, repeating patterns in
 the image. Note that this check has the caveat that it is an average for the
 volume, so if the image consists of more background than features of interest
@@ -39,10 +50,11 @@ it will be less meaningful.
 
 When run stand-alone, there are a number of options to configure. The noise
 cut-off may be manually specified for each channel instead of using the
-"Threshold and 16-bit Conversion" utility; the gaussian window function used to
-avoid Fourier Transform edge artefacts may be turned off; auto-scaling of the
-Fourier Transform result from mode to maximum may be turned off; and the blur /
-false-color look-up table option may be turned on.
+"Threshold and 16-bit Conversion" utility; you may choose not to use a noise
+cut-off at all; the gaussian window function used to avoid Fourier Transform
+edge artefacts may be turned off; auto-scaling of the Fourier Transform result
+from mode to maximum may be turned off; and the blur / false-color look-up
+table option may be turned on.
 
 Modulation Contrast Map (MCM)
 -----------------------------

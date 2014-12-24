@@ -25,14 +25,4 @@ lawn or fluorescent ink slide works well. In addition to plotting the phase
 steps for visual inspection, a number of statistics are also reported: these
 are the standard deviations of the illumination pattern frequency, the phase
 step size, and reproducibility of the offset (i.e. whether the phase returns to
-the same position after each cycle or not). **Note: this plugin is a work in
-progress, and the phase unwrapping and statistics are not yet reliable.**
-
-Spherical Aberration Mismatch (SAM)
------------------------------------
-
-This check plots the minimum and the mean value in each slice, and summarizes
-the standard deviation of the minimum value normalized by the stack mode
-intensity. Large variations in the minimum value relative to the average
-indicate mismatch between the spherical aberration present when the sample
-and point spread function data were acquired.
+the same position after each cycle or not).

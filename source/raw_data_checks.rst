@@ -8,14 +8,14 @@ Average intensity is plotted for each slice (in the order: Phase, Z, Angle,
 Time) where each channel is assigned an arbitrary color: 1st channel = red,
 2nd = green, 3rd = blue, subsequent = black. This helps judge bleaching and whether all angles show
 a similar intensity (as they should). An overall summary statistic is
-reported for each channel: ``total intensity variation (%)``. This is for
+reported for each channel: **total intensity variation (%)**. This is for
 a 9-Z window about the central Z-slice. The following additional statistics
 each contribute to the total intensity variation, eenabling the source of
 the problem to be identified:
 
-* ``average intensity decay per 9 section window (%)``, due to photobleaching 
-* ``maximum intensity difference between angles (%)``
-* ``relative intensity fluctuations (%)``, due to illumination flicker
+* **average intensity decay per 9 section window (%)**, due to photobleaching 
+* **maximum intensity difference between angles (%)**
+* **relative intensity fluctuations (%)**, due to illumination flicker
 
 Motion & Illumination Variation (MIV)
 -------------------------------------
@@ -33,9 +33,9 @@ artifacts.
 Fourier Projections (FPJ)
 -------------------------
 
-``This check is not turned on by default in the main dialog, since it it
+*This check is not turned on by default in the main dialog, since it it
 requires a sample that fills a large porportion of the field of view and is
-mainly intended for diagnosis of hardware issues.`` 2D Fourier Transforms of
+mainly intended for diagnosis of hardware issues.* 2D Fourier Transforms of
 the raw data are taken, and projected over all phases and angles. There are
 sliders for channel and time where present.  When features are in-focus and
 their intensities are modulated by the illumination pattern, 2D FFTs of each
@@ -49,14 +49,14 @@ padding, which may lead to inferior results.
 Modulation Contrast (MCN)
 -------------------------
 
-The ``Modulation Contrast-to-Noise Ratio`` (MCNR) is a ratio of SI illumination
+The **Modulation Contrast-to-Noise Ratio** (MCNR) is a ratio of SI illumination
 pattern strength to noise strength - values less than 3 are inadequate
 (purple), values ~6 are adequate (red), values of ~12 are good (orange), values
 of ~18 are very good (yellow) and values of ~24 or better are excellent
 (white). NB. the display range must not be changed from 0 to 24 for meaningful
 interpretation of the Look-Up Table. The check reports an average MCNR value for
 auto-thresholded image features (Otsu method), and an estimate for the optimal
-``Wiener filter parameter`` for OMX data reconstruction based on this.
+**Wiener filter parameter** for OMX data reconstruction based on this.
 
 If the illumination pattern at a given feature is overpowered by the noise,
 reconstruction will fail - any super-resolution features observed in such

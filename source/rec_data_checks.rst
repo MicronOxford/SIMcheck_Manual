@@ -9,19 +9,19 @@ respectively) showing relative contribution of "negative" values to the
 reconstructed result for each channel. Negative values are those below the
 modal intensity value for background regions, and are due to reconstructed
 noise and ringing artefacts at the edge of high-intensity features.  The
-``max-to-min intensity ratio`` (positive versus negative values at the
-histogram extrema) is reported: i.e. only a small percentage of the highest and
-lowest intensities (this increases the robustness of the statistic to
+**Max-to-Min intensity Ratio** (MMR; positive versus negative intensities at
+the histogram extrema) is reported: i.e. only a small percentage of the highest
+and lowest intensities (this increases the robustness of the statistic to
 differences in the proprtion of background versus features in the image). Where
 the ratio is less than 5-10, this generally indicates a poor reconstruction.
 
 Spherical Aberration Mismatch (SAM)
 -----------------------------------
 
-``This check is not enabled by default, as it requires an appropriate sample``,
-e.g. a bead lawn, to work reliably.  It plots the minimum and the mean value in
+*This check is not enabled by default, as it requires an appropriate sample,
+e.g. a bead lawn, to work reliably.* It plots the minimum and the mean value in
 each slice, and summarizes the standard deviation of the minimum value
-normalized by the stack mode intensity, the ``Z Minimum Variation`` (ZMV).
+normalized by the stack mode intensity, the **Z Minimum Variation** (ZMV).
 Large variations in the minimum value relative to the average indicate mismatch
 between the spherical aberration present when the sample and point spread
 function data were acquired.

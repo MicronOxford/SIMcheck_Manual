@@ -8,7 +8,7 @@ including Zeiss's ELYRA and Nikon's N-SIM. It should work with any fairly
 recent ImageJ version, and can be installed by copying the ``SIMcheck_.jar``
 file into your plugins folder and restarting ImageJ. 
 
-Please read the Quick Start guide below.
+Please read the :ref:`quick-start` guide below.
 
 Contents:
 

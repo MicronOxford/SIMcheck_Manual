@@ -1,3 +1,5 @@
+.. _quick-start:
+
 Quick Start
 ===========
 
@@ -10,7 +12,7 @@ datasets**: the **raw data** file, and the corresponding **reconstructed
 data** file. Before running SIMcheck, import the data as a single stack.
 NB. SIMcheck can be used to convert ELYRA and N-SIM data to the OMX
 dimenson ordering via the main SIMcheck plugin or the menu option
-SIMcheck->Utilities->Format Converter.
+``SIMcheck > Utilities > Format Converter``.
 
 **It is best to crop to a region containing the features of interest**
 before running the checks. The main SIMcheck dialog allows cropping parameters
@@ -18,7 +20,7 @@ to be specified using reconstructed data slice numbers and Region-Of-Interest.
 Cropping improves Fourier- and histogram-based checks, which reflect average
 properties for the field of view, and also saves time and reduces the
 chance of running out of memory (NB. memory allocated to ImageJ can be
-adjusted in Edit->Options->Memory & threads). 
+adjusted in ``Edit > Options > Memory & threads``). 
 
 Specify image stacks to use, checks to run, and ensure additional parameters
 (i.e. Phases, Angles, Camera Bit-Depth) are correct. The "Modulation Contrast

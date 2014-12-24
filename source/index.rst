@@ -1,12 +1,12 @@
 SIMcheck Manual
 ===============
 
-SIMcheck is a package of ImageJ tools for assessing the quality and reliability 
+SIMcheck is a package of ImageJ tools for assessing the quality and reliability
 of Structured Illumination Microscopy (SIM) data. Although originally developed
-for API OMX data, SIMcheck may be used with data from other systems including 
-Zeiss's ELYRA and Nikon's N-SIM. It should work with any fairly recent ImageJ 
-version, and can be installed by copying the ``SIMcheck_.jar`` file into your 
-plugins folder and restarting ImageJ. 
+for GE Healthcare OMX data, SIMcheck may be used with data from other systems
+including Zeiss's ELYRA and Nikon's N-SIM. It should work with any fairly
+recent ImageJ version, and can be installed by copying the ``SIMcheck_.jar``
+file into your plugins folder and restarting ImageJ. 
 
 Please read the Quick Start guide below.
 

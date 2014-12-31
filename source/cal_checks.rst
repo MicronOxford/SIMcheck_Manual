@@ -22,7 +22,8 @@ This plugin checks system stability and alignment by detecting illumination
 pattern frequencies and plotting the phase steps. The SIM illumination pattern
 should be in-focus and the sample should fill most of the field of view: a bead
 lawn or fluorescent ink slide works well. In addition to plotting the phase
-steps for visual inspection, a number of statistics are also reported: these
-are the standard deviations of the illumination pattern frequency, the phase
-step size, and reproducibility of the offset (i.e. whether the phase returns to
-the same position after each cycle or not).
+steps for visual inspection, a number of statistics are also reported. The main
+stats are the standard deviations of the illumination pattern frequency, the
+phase step size, and reproducibility of the offset (i.e. whether the phase
+returns to the same position after each cycle or not). In addition, estimated
+illumination pattern line-spacing and k0 angles are reported.

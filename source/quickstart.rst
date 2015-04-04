@@ -14,14 +14,14 @@ NB. SIMcheck can be used to convert ELYRA and N-SIM data to the OMX
 dimenson ordering via the main SIMcheck plugin or the menu option
 ``SIMcheck > Utilities > Format Converter``.
 
-.. _fig1:
+.. _fig1a:
 
     .. image:: http://localhost/~gball/SIMcheck_Examples/SIMcheckStart.jpg
         :width: 440px
         :align: center
         :alt: SIMcheck main dialog
 
-    Figure 1.  SIMcheck main dialog, with raw and reconstructed data.
+    **Figure 1a.** SIMcheck main dialog, with raw and reconstructed data.
 
 **It is best to crop to a region containing the features of interest**
 before running the checks. The main SIMcheck dialog allows cropping parameters
@@ -42,7 +42,7 @@ in your Plugins menu. Output images will be displayed, and statistics and
 information will appear in the ImageJ log window. Finally, a Results window
 containing a summary of the key numerical statistics is displayed.
 
-.. _fig2:
+.. _fig1b:
 
     .. image:: http://localhost/~gball/SIMcheck_Examples/SIMcheckChecks.jpg
        :width: 57 %
@@ -51,7 +51,7 @@ containing a summary of the key numerical statistics is displayed.
        :width: 41 %
        :alt: SIMcheck log and summary
 
-    Figure 2.  SIMcheck output: check output images, log and summary.
+    **Figure 1b.** SIMcheck output: check output images, log and summary.
 
 SIMcheck should be able to handle handle multi-channel data and time
 series, but for large datasets you may find it best to split channels

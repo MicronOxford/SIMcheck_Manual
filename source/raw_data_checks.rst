@@ -5,17 +5,46 @@ Channel Intensity Profiles (CIP)
 --------------------------------
 
 Average intensity is plotted for each slice (in the order: Phase, Z, Angle,
-Time) where each channel is assigned an arbitrary color: 1st channel = red,
-2nd = green, 3rd = blue, subsequent = black. This helps judge bleaching and whether all angles show
-a similar intensity (as they should). An overall summary statistic is
-reported for each channel: **total intensity variation (%)**. This is for
-a 9-Z window about the central Z-slice. The following additional statistics
-each contribute to the total intensity variation, eenabling the source of
-the problem to be identified:
+Time) where each channel is assigned an arbitrary color: 1st channel = red, 2nd
+= green, 3rd = blue, subsequent = black. This helps judge bleaching and whether
+all angles show a similar intensity (as they should).
+
+.. _fig2a:
+
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/SIMcheck_CIP_good.png
+        :width: 500px
+        :align: center
+        :alt: CIP intensity profile without bleaching.
+
+    **Figure 2a.** Intensity profile for single-channel image without bleaching.
+
+An overall summary statistic is reported for each channel: **total intensity
+variation (%)**. This is for a 9-Z window about the central Z-slice. The
+following additional statistics each contribute to the total intensity
+variation, enabling the source of the problem to be identified:
 
 * **average intensity decay per 9 section window (%)**, due to photobleaching 
-* **maximum intensity difference between angles (%)**
+* **maximum intensity difference between angles (%)**, due to miscalibration
 * **relative intensity fluctuations (%)**, due to illumination flicker
+
+Examples of each of each of these problems are shown in Figures 2b, 2c and 2d
+below, respectively.
+
+.. _fig2b:
+
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_bleach_CIP_bad.png
+        :width: 66 %
+        :alt: Intensity profiles, bleaching in 3rd channel
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_bleach_bad.png
+        :width: 32 %
+        :alt: Raw data split view showing bleaching
+
+    **Figure 2b.** Left: Intensity profile for 3-channel image showing significant
+    bleaching in the third channel (blue). Right: a Z-slice from this image
+    split to show angle 1 (top) and angle 3 (bottom), illustrates that bleaching
+    occurs during acquisition of angles 1 and 2.
+     
+
 
 Motion & Illumination Variation (MIV)
 -------------------------------------

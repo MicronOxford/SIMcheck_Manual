@@ -135,4 +135,17 @@ auto-thresholded image features (Otsu method), and an estimate for the optimal
 
 If the illumination pattern at a given feature is overpowered by the noise,
 reconstruction will fail - any super-resolution features observed in such
-regions cannot be trusted.
+regions cannot be trusted. Note that **contrast** is key, and even high signal
+intensities may be inadequate where contrast is poor.
+
+.. _fig2g:
+
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_MCN_ok_bad.jpg
+        :width: 400px
+        :align: center
+        :alt: Modulation Contrast-to-Noise for medium and low SNR images
+
+    **Figure 2g.** Modulation Contrast-to-Noise (MCN) images for a pair of raw
+    SIM datasets acquired at medium and low signal-to-noise ratios (top and
+    bottom, respectively). The bottom image has inadequate MCN to give a good,
+    high resolution reconstruction.

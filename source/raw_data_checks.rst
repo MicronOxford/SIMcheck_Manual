@@ -107,6 +107,20 @@ sparse samples may lack clear spots in the FFT). Note that images with XY sizes
 that are not a power of 2 (256x256, 512x512 and so on are power of 2) require
 padding, which may lead to inferior results.
 
+.. _fig2f:
+
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_FPJ_good.jpg
+        :width: 360px
+        :align: center
+        :alt: Projection of 2D Fourier-transformed raw SIM data (FPJ)
+
+    **Figure 2f.** Projection of 2D Fourier transforms for a good SIM dataset
+    that fills the field of view. Here the first and second order spots (marked
+    in red) are clearly visible and clean/sharp. Note that the plot is
+    symmetrical about the centre, with low frequencies in the middle and high
+    frequencies at the edges.
+
+
 Modulation Contrast (MCN)
 -------------------------
 

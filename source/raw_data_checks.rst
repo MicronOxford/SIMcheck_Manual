@@ -78,6 +78,19 @@ are sampled at each angle, and features that move or experience different
 illumination intensity for different angles (or phases) will result in
 artifacts.
 
+.. _fig2e:
+
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_MIV_bad.jpg
+        :width: 550px
+        :align: center
+        :alt: MIV image showing colored artifacts
+
+    **Figure 2e.** False-colored 'MIV' check image, where white regions
+    have intensities in the same proportion across all angles. The sample
+    contained non-fixed features that moved in-between data acquisition for
+    the different angles: these can be seen as colored spots (highlighted
+    in this figure with red arrows).
+
 Fourier Projections (FPJ)
 -------------------------
 

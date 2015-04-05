@@ -15,6 +15,22 @@ and lowest intensities (this increases the robustness of the statistic to
 differences in the proprtion of background versus features in the image). Where
 the ratio is less than 5-10, this generally indicates a poor reconstruction.
 
+.. _fig3a:
+
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Rec/Rec_RIH_good.jpg
+        :width: 300px
+        :alt: RIH histogram and image for good reconstruction
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Rec/Rec_RIH_poor.jpg
+        :width: 300px
+        :alt: RIH histogram and image for poor reconstruction
+
+    **Figure 3a.** Reconstructed images and intensity histograms for a good
+    (left) and poor (right) reconstruction. The histogram peak corresponds
+    to the centre of the background intensity distribution, i.e. reconstructed
+    noise. Ideally this peak should be narrow. Intensity information for real
+    features should extend in the positive direction only, which it clearly
+    does to a greater extent in the histogram on the left.
+
 Spherical Aberration Mismatch (SAM)
 -----------------------------------
 

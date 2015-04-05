@@ -12,7 +12,7 @@ all angles show a similar intensity (as they should).
 .. _fig2a:
 
     .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/SIMcheck_CIP_good.png
-        :width: 500px
+        :width: 400px
         :align: center
         :alt: CIP intensity profile without bleaching.
 
@@ -43,7 +43,26 @@ below, respectively.
     bleaching in the third channel (blue). Right: a Z-slice from this image
     split to show angle 1 (top) and angle 3 (bottom), illustrates that bleaching
     occurs during acquisition of angles 1 and 2.
-     
+
+.. _fig2c:
+
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_angledif_CIP_poor.png
+        :width: 440px
+        :align: center
+        :alt: CIP intensity profile with intensity difference between angles
+
+    **Figure 2c.** Intensity profile for a 3-channel image showing systematic 
+    intensity differences between the slices of the 3 angles.
+
+.. _fig2d:
+
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_fluctuations_CIP_bad.png
+        :width: 550px
+        :align: center
+        :alt: CIP intensity profile with intensity fluctuations
+
+    **Figure 2d.** Intensity profile for a 1-channel image showing a significant
+    slice-to-slice intensity fluctuations (due to unstable illumination).
 
 
 Motion & Illumination Variation (MIV)

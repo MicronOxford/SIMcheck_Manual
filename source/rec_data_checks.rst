@@ -42,6 +42,22 @@ Large variations in the minimum value relative to the average indicate mismatch
 between the spherical aberration present when the sample and point spread
 function data were acquired.
 
+.. _fig3b:
+
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Rec/Rec_SAM_good.jpg
+        :width: 300px
+        :alt: SAM plot and image without mismatch
+    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Rec/Rec_SAM_poor.jpg
+        :width: 300px
+        :alt: SAM plot and image with mismatch
+
+    **Figure 3b.** Reconstructed images and slice mean/min plots for a
+    reconstruction without (left) and with (right) spherical aberration mismatch.
+    A characteristic dip in the minimum value indicating mismatch is shown with
+    a red arrow in the bottom right plot. This corresponds to the dark
+    (negative) fringe around the edge of the nucleus, also marked with a red
+    arrow in the image data top right.
+
 Fourier plots (FTL, FTR, FTO)
 -----------------------------
 

@@ -17,10 +17,10 @@ the ratio is less than 5-10, this generally indicates a poor reconstruction.
 
 .. _fig3a:
 
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Rec/Rec_RIH_good.jpg
+    .. image:: images/Checks_Rec/Rec_RIH_good.jpg
         :width: 300px
         :alt: RIH histogram and image for good reconstruction
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Rec/Rec_RIH_poor.jpg
+    .. image:: images/Checks_Rec/Rec_RIH_poor.jpg
         :width: 300px
         :alt: RIH histogram and image for poor reconstruction
 
@@ -44,10 +44,10 @@ function data were acquired.
 
 .. _fig3b:
 
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Rec/Rec_SAM_good.jpg
+    .. image:: images/Checks_Rec/Rec_SAM_good.jpg
         :width: 300px
         :alt: SAM plot and image without mismatch
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Rec/Rec_SAM_poor.jpg
+    .. image:: images/Checks_Rec/Rec_SAM_poor.jpg
         :width: 300px
         :alt: SAM plot and image with mismatch
 

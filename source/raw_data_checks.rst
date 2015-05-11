@@ -11,7 +11,7 @@ all angles show a similar intensity (as they should).
 
 .. _fig2a:
 
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/SIMcheck_CIP_good.png
+    .. image:: images/Checks_Raw/SIMcheck_CIP_good.png
         :width: 400px
         :align: center
         :alt: CIP intensity profile without bleaching.
@@ -32,10 +32,10 @@ below, respectively.
 
 .. _fig2b:
 
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_bleach_CIP_bad.png
+    .. image:: images/Checks_Raw/Raw_bleach_CIP_bad.png
         :width: 66 %
         :alt: Intensity profiles, bleaching in 3rd channel
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_bleach_bad.png
+    .. image:: images/Checks_Raw/Raw_bleach_bad.png
         :width: 32 %
         :alt: Raw data split view showing bleaching
 
@@ -46,7 +46,7 @@ below, respectively.
 
 .. _fig2c:
 
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_angledif_CIP_poor.png
+    .. image:: images/Checks_Raw/Raw_angledif_CIP_poor.png
         :width: 440px
         :align: center
         :alt: CIP intensity profile with intensity difference between angles
@@ -56,7 +56,7 @@ below, respectively.
 
 .. _fig2d:
 
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_fluctuations_CIP_bad.png
+    .. image:: images/Checks_Raw/Raw_fluctuations_CIP_bad.png
         :width: 550px
         :align: center
         :alt: CIP intensity profile with intensity fluctuations
@@ -80,7 +80,7 @@ artifacts.
 
 .. _fig2e:
 
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_MIV_bad.jpg
+    .. image:: images/Checks_Raw/Raw_MIV_bad.jpg
         :width: 550px
         :align: center
         :alt: MIV image showing colored artifacts
@@ -109,7 +109,7 @@ padding, which may lead to inferior results.
 
 .. _fig2f:
 
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_FPJ_good.jpg
+    .. image:: images/Checks_Raw/Raw_FPJ_good.jpg
         :width: 360px
         :align: center
         :alt: Projection of 2D Fourier-transformed raw SIM data (FPJ)
@@ -140,7 +140,7 @@ intensities may be inadequate where contrast is poor.
 
 .. _fig2g:
 
-    .. image:: http://localhost/~gball/SIMcheck_Examples/Checks_Raw/Raw_MCN_ok_bad.jpg
+    .. image:: images/Checks_Raw/Raw_MCN_ok_bad.jpg
         :width: 400px
         :align: center
         :alt: Modulation Contrast-to-Noise for medium and low SNR images

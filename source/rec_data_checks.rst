@@ -7,13 +7,14 @@ Reconstructed Intensity Histogram (RIH)
 Overlays linear- and logarithmic-scaled intensity histograms (black and gray,
 respectively) showing relative contribution of "negative" values to the
 reconstructed result for each channel. Negative values are those below the
-modal intensity value for background regions, and are due to reconstructed
-noise and ringing artefacts at the edge of high-intensity features.  The
-**Max-to-Min intensity Ratio** (MMR; positive versus negative intensities at
-the histogram extrema) is reported: i.e. only a small percentage of the highest
-and lowest intensities (this increases the robustness of the statistic to
-differences in the proprtion of background versus features in the image). Where
-the ratio is less than 5-10, this generally indicates a poor reconstruction.
+average (mode) intensity value for background regions, and are due to
+reconstructed noise and ringing artefacts at the edge of high-intensity
+features. The **Max-to-Min intensity Ratio** (MMR; positive versus negative
+intensities at the histogram extrema) is reported: i.e. only a small percentage
+of the highest and lowest intensities (this increases the robustness of the
+statistic to differences in the proprtion of background versus features in the
+image). Where the ratio is less than 5-10, this generally indicates a poor
+reconstruction.
 
 .. _fig3a:
 
@@ -61,6 +62,11 @@ function data were acquired.
 Fourier plots (FTL, FTR, FTO)
 -----------------------------
 
+**Note that this check has the caveat that it evaluates the image volume's
+average characterstics, so if the image consists of more background than
+features of interest it becomes difficult to discern the contribution
+from the features of interest.**
+
 Displays 2D Fourier transform "target" plots with resolution lines (in Microns)
 and optionally blurred and color-coded with a 16-color Look-Up Table to make
 the relative proportion of different frequencies more obvious. The plots
@@ -74,11 +80,54 @@ center (lowest frequency) to the edge (highest frequency and resolution)
 indicates real high resolution information; whereas a flat spectrum indicates
 only noise at the higher frequencies. The lateral (FTL) and radial (FTR) plots
 give an indication on XY resolution, while the orthogonal (FTO) plot reports on
-Z resolution as well. Reconstruction artifacts may also be apparent as spots
-in the Fourier spectrum, which are observed as regular, repeating patterns in
-the image. Note that this check has the caveat that it is an average for the
-volume, so if the image consists of more background than features of interest
-it will be less meaningful.
+Z resolution as well. 
+
+.. _fig3c:
+
+    .. image:: images/Checks_Rec/Rec_FTL_good.png
+        :width: 220px
+        :alt: FTL plot for a high resolution image
+    .. image:: images/Checks_Rec/Rec_FTL_lowres.png
+        :width: 220px
+        :alt: FTL plot for a low resolution image
+    .. image:: images/Checks_Rec/Rec_FTO_good.png
+        :width: 220px
+        :alt: FTO plot for the high resolution image
+    .. image:: images/Checks_Rec/Rec_FTR_good.png
+        :width: 225px
+        :alt: FTR plot for a high resolution image
+    .. image:: images/Checks_Rec/Rec_FTR_lowres.png
+        :width: 225px
+        :alt: FTR plot for a low resolution image
+
+    **Figure 3c.** The top row shows 2D Fourier transform amplitudes (log-
+    scaled). Top left: a high resolution dataset; middle: a noisy, low 
+    resolution dataset showing a "hard edge" (red arrow) and obvious
+    "flower pattern"; right: 2D Fourier transform of an orthogonally
+    resliced (i.e. axial) cross-section through the image, which reports
+    on Z resolution. Bottom: radial profile plots derived from the lateral
+    Fourier transform images in the top row. In the FTR plot for the left-hand
+    high resolution image, frequency amplitudes decay smoothly until 1/8 to
+    1/10 microns, i.e. a resolution of ~120 nm. In the poorer middle dataset,
+    frequency amplitudes decay rapidly, disappearing into the noise by
+    ~200 nm. The second, rapid drop at 125-100 nm corresponds to the
+    frequency support limit of the OTF.
+
+Reconstruction artifacts may also be apparent as spots in the Fourier spectrum,
+which are observed as regular, repeating patterns in the image. 
+
+.. _fig3d:
+
+    .. image:: images/Checks_Rec/Rec_FTL_artifact.jpg
+        :width: 500px
+        :align: center
+        :alt: FTL plot showing spots (artifacts)
+
+    **Figure 3d.** An image containing reconstruction artifacts shown top left,
+    with a blow-up of top right of the image shown bottom right. Spots are 
+    evident in the 2D Fourier transform "FTL" plot, highlighted with a red
+    arrow. In the reconstructed image these reconstuction artifacts can be seen
+    as repeating hexagonal patterns.
 
 When run stand-alone, there are a number of options to configure. The noise
 cut-off may be manually specified for each channel instead of using the
@@ -102,3 +151,17 @@ are colored green in this map. Note that ImageJ shows the R,G,B pixel values in
 its status bar when you hover over a pixel with the pointer. It is intended as
 a quantitative tool for assessing whether individual features in the
 reconstructed data are supported by the raw data.
+
+.. _fig3e:
+
+    .. image:: images/Checks_Rec/Rec_MCM_MTs.png
+        :width: 450px
+        :align: center
+        :alt: MCM map highlighting high and low resolution microtubules.
+
+    **Figure 3e.** Modulation Contrast Map for a MicroTubule (MT) sample. Note
+    the Look-Up Table at the bottom right of the image shows the corresponding
+    modulation contrast value for each color. A MT filament with low modulation
+    contrast (0-6, purple-red) is highlighted with a red arrow: this implies
+    lower resolution / less reliable high resolution features than microtubles
+    with a modulation contrast >6 (orange/yellow/white).

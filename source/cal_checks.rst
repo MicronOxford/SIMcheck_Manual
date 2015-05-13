@@ -39,20 +39,39 @@ where the illumination pattern is created by interference of multiple beams.
         :width: 300px
         :alt: Badly focused illumination pattern, zipper-like
 
-    **Figure 4a.** Top: Sequence of steps used to produce the axial views
-    below. Bottom left: a well-focused illumination pattern, with each
-    stripe showing a PSF-like appearance. Bottom right: a badly-focused
+    **Figure 4a.** Top: Sequence of steps used to produce axial views like the
+    ones shown below. Bottom left: a well-focused illumination pattern, with
+    each stripe showing a PSF-like appearance. Bottom right: a badly-focused
     illumination pattern with a zipper-like appearance.
 
 Illumination Phase Steps (IPS)
 ------------------------------
 
 This plugin checks system stability and alignment by detecting illumination
-pattern frequencies and plotting the phase steps. The SIM illumination pattern
-should be in-focus and the sample should fill most of the field of view: a bead
-lawn or fluorescent ink slide works well. In addition to plotting the phase
-steps for visual inspection, a number of statistics are also reported. The main
-stats are the standard deviations of the illumination pattern frequency, the
-phase step size, and reproducibility of the offset (i.e. whether the phase
-returns to the same position after each cycle or not). In addition, estimated
-illumination pattern line-spacing and k0 angles are reported.
+pattern frequencies in raw SIM data and plotting the phase steps (taken from
+1st order frequency). The SIM illumination pattern should be in-focus and the
+sample should fill most of the field of view: a bead lawn or fluorescent ink
+slide works well. In addition to plotting the phase steps for visual
+inspection, a number of statistics are also reported. The main stats are the
+standard deviations of the illumination pattern frequency, the phase step size,
+and reproducibility of the offset (i.e. whether the phase returns to the same
+position after each cycle or not). In addition, estimated illumination pattern
+line-spacing and k0 angles are reported.
+
+.. _fig4b:
+
+    .. image:: images/Checks_Cal/Cal_IPS_lawn.png
+        :width: 150px
+        :alt: Bead lawn sample image
+    .. image:: images/Checks_Cal/Cal_IPS_A2_Ord1.png
+        :width: 150px
+        :alt: 1st order illumination frequency spot in Fourier spectrum
+    .. image:: images/Checks_Cal/Cal_IPS_A2_PPL.png
+        :width: 320px
+        :alt: Phase step profile showing some drift
+
+    **Figure 4b.** From left to right: a bead lawn sample image; filtered
+    Fourier transform for the Angle 2 central slice, with 1st order
+    illumination pattern frequency peak marked; plot of the phase steps with
+    red arrows highlighting phase offset drift (phase step standard
+    deviation between sequential points on the plot was 0.03 radians, or 2%).

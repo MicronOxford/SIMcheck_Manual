@@ -28,7 +28,9 @@ variation, enabling the source of the problem to be identified:
 * **relative intensity fluctuations (%)**, due to illumination flicker
 
 Examples of each of each of these problems are shown in Figures 2b, 2c and 2d
-below, respectively.
+below, respectively. Note that typically around 50% total intensity variation
+can be tolerated, depending on the minimum signal-to-noise level (since this
+impacts modulation contrast to noise).
 
 .. _fig2b:
 

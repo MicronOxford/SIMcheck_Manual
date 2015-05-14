@@ -4,17 +4,21 @@ Reconstructed Data Checks
 Reconstructed Intensity Histogram (RIH)
 ---------------------------------------
 
-Overlays linear- and logarithmic-scaled intensity histograms (black and gray,
-respectively) showing relative contribution of "negative" values to the
-reconstructed result for each channel. Negative values are those below the
-average (mode) intensity value for background regions, and are due to
-reconstructed noise and ringing artefacts at the edge of high-intensity
-features. The **Max-to-Min intensity Ratio** (MMR; positive versus negative
-intensities at the histogram extrema) is reported: i.e. only a small percentage
-of the highest and lowest intensities (this increases the robustness of the
-statistic to differences in the proprtion of background versus features in the
-image). Where the ratio is less than 5-10, this generally indicates a poor
-reconstruction.
+Displays an overlay of linearly- and logarithmically-scaled intensity
+histograms (black and gray, respectively) showing relative contribution of
+"negative" values to the reconstructed result for each channel. Negative values
+are those below the average (mode) intensity value for background regions, and
+are due to reconstructed noise and ringing artefacts at the edge of
+high-intensity features. The **Max-to-Min intensity Ratio** (MMR; positive
+versus negative intensities at the histogram extrema) is reported: i.e. only a
+small percentage of the highest and lowest intensities (this increases the
+robustness of the statistic to differences in the proprtion of background
+versus features in the image). A ratio less than 3 generally indicates poor
+reconstruction; a ratio above 6 indicates good reconstruction.
+
+N.B. **This check requires a non-thresholded reconstructed dataset**: any
+option that discards low intensities, such as "discard negatives" in GE's
+SoftWoRx software, should be disabled.
 
 .. _fig3a:
 
@@ -62,24 +66,24 @@ function data were acquired.
 Fourier plots (FTL, FTR, FTO)
 -----------------------------
 
-**Note that this check has the caveat that it evaluates the image volume's
-average characterstics, so if the image consists of more background than
-features of interest it becomes difficult to discern the contribution
-from the features of interest.**
+**Note that this check evaluates the image volume's average characteristics. It
+is therefore recommended to select an image region with a high proportion of
+features as well as some background. A very high proportion of background can
+make it difficult to discern the contribution from the features of interest.**
 
-Displays 2D Fourier transform "target" plots with resolution lines (in Microns)
-and optionally blurred and color-coded with a 16-color Look-Up Table to make
+Displays 2D Fourier transform "target" plots with overlaid resolution lines (in Microns)
+and optionally blurred and color-coded with a 16-color look-up table to make
 the relative proportion of different frequencies more obvious. The plots
-displayed are: "Fourier Transform Lateral (FTL)" for XY sections; "Fourier
-Transform Radial (FTR)" which is a radial (circularly-averaged) profile though
-the XY Fourier Trasform; and "Fourier Transform Orthogonal (FTO)" for the
+displayed are: Fourier Transform Lateral (FTL) for XY sections; Fourier
+Transform Radial (FTR) which is a radial (circularly-averaged) profile though
+the XY Fourier Trasform; and Fourier Transform Orthogonal (FTO) for the
 central resliced XZ section (N.B. ensure the central Y point contains some
 features of interest). These plots help judge the average resolution in
 the sample volume, limited by noise. A gradual decay of frequencies from the
 center (lowest frequency) to the edge (highest frequency and resolution)
 indicates real high resolution information; whereas a flat spectrum indicates
-only noise at the higher frequencies. The lateral (FTL) and radial (FTR) plots
-give an indication on XY resolution, while the orthogonal (FTO) plot reports on
+predominantly noise at the higher frequencies. The lateral (FTL) and radial (FTR) plots
+give an indication on XY resolution, while the axial (FTO) plot reports on
 Z resolution as well. 
 
 .. _fig3c:

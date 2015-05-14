@@ -23,13 +23,15 @@ dimenson ordering via the main SIMcheck plugin or the menu option
 
     **Figure 1a.** SIMcheck main dialog, with raw and reconstructed data.
 
-**It is best to crop to a region containing the features of interest**
-before running the checks. The main SIMcheck dialog allows cropping parameters
-to be specified using reconstructed data slice numbers and Region-Of-Interest.
+Before running the checks **it is best to crop to a region containing the
+features of interest**, but including a representative area of background
+features. Preferably crop in XY to a square region of size 256x256 or 512x512
+(i.e. a power of 2). The main SIMcheck dialog allows cropping parameters to be
+specified using reconstructed data slice numbers and Region-Of-Interest.
 Cropping improves Fourier- and histogram-based checks, which reflect average
-properties for the field of view, and also saves time and reduces the
-chance of running out of memory (NB. memory allocated to ImageJ can be
-adjusted in ``Edit > Options > Memory & threads``). 
+properties for the field of view, and also saves time and reduces the chance of
+running out of memory (NB. memory allocated to ImageJ can be adjusted in ``Edit
+> Options > Memory & threads``). 
 
 Specify image stacks to use, checks to run, and ensure additional parameters
 (i.e. Phases, Angles, Camera Bit-Depth) are correct. The "Modulation Contrast
@@ -53,7 +55,7 @@ containing a summary of the key numerical statistics is displayed.
 
     **Figure 1b.** SIMcheck output: check output images, log and summary.
 
-SIMcheck should be able to handle handle multi-channel data and time
+SIMcheck is able to handle handle multi-channel data and time
 series, but for large datasets you may find it best to split channels
 and analyze them separately if memory is an issue (running all checks
 requires additional memory equal to approximately 4x that taken up by

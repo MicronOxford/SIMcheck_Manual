@@ -1,3 +1,5 @@
+.. _quick-start:
+
 Quick Start
 ===========
 
@@ -10,15 +12,26 @@ datasets**: the **raw data** file, and the corresponding **reconstructed
 data** file. Before running SIMcheck, import the data as a single stack.
 NB. SIMcheck can be used to convert ELYRA and N-SIM data to the OMX
 dimenson ordering via the main SIMcheck plugin or the menu option
-SIMcheck->Utilities->Format Converter.
+``SIMcheck > Utilities > Format Converter``.
 
-**It is best to crop to a region containing the features of interest**
-before running the checks. The main SIMcheck dialog allows cropping parameters
-to be specified using reconstructed data slice numbers and Region-Of-Interest.
+.. _fig1a:
+
+    .. image:: images/SIMcheckStart.jpg
+        :width: 440px
+        :align: center
+        :alt: SIMcheck main dialog
+
+    **Figure 1a.** SIMcheck main dialog, with raw and reconstructed data.
+
+Before running the checks **it is best to crop to a region containing the
+features of interest**, but including a representative area of background
+features. Preferably crop in XY to a square region of size 256x256 or 512x512
+(i.e. a power of 2). The main SIMcheck dialog allows cropping parameters to be
+specified using reconstructed data slice numbers and Region-Of-Interest.
 Cropping improves Fourier- and histogram-based checks, which reflect average
-properties for the field of view, and also saves time and reduces the
-chance of running out of memory (NB. memory allocated to ImageJ can be
-adjusted in Edit->Options->Memory & threads). 
+properties for the field of view, and also saves time and reduces the chance of
+running out of memory (NB. memory allocated to ImageJ can be adjusted in ``Edit
+> Options > Memory & threads``). 
 
 Specify image stacks to use, checks to run, and ensure additional parameters
 (i.e. Phases, Angles, Camera Bit-Depth) are correct. The "Modulation Contrast
@@ -31,7 +44,18 @@ in your Plugins menu. Output images will be displayed, and statistics and
 information will appear in the ImageJ log window. Finally, a Results window
 containing a summary of the key numerical statistics is displayed.
 
-SIMcheck should be able to handle handle multi-channel data and time
+.. _fig1b:
+
+    .. image:: images/SIMcheckChecks.jpg
+       :width: 57 %
+       :alt: SIMcheck output images
+    .. image:: images/SIMcheckLogs.png
+       :width: 41 %
+       :alt: SIMcheck log and summary
+
+    **Figure 1b.** SIMcheck output: check output images, log and summary.
+
+SIMcheck is able to handle handle multi-channel data and time
 series, but for large datasets you may find it best to split channels
 and analyze them separately if memory is an issue (running all checks
 requires additional memory equal to approximately 4x that taken up by

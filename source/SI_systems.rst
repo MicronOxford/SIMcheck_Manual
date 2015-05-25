@@ -30,12 +30,16 @@ The Zeiss ELYRA system has greater flexibility in terms of the number of
 different angles acquired, with both 3 angles and 5 angles typically used (the
 latter produces higher quality reconstructions given a sufficiently photostable
 sample). The number of phases is limited to 5 as for the API OMX systems. ELYRA
-data are typically stored in .czi format files.
+data are typically stored in .czi format files. 
 
 The hyperstack will have the angles folded into the Z dimension (real Z then
 angle), and the phase folded into the time dimension. SIMcheck re-orders the
 data into the OMX "CPZAT" order prior to running the pre-processing checks for
 convenience.
+
+Note that pseudo-widefield image channels produced by the Zeiss reconstruction
+software (alternating with super-resolution channels) should be discarded
+before using the reconstructed data as input for SIMcheck.
 
 Nikon N-SIM
 -----------

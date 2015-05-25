@@ -32,4 +32,6 @@ Stack FFT (2D)
 --------------
 
 Applies a 2D Fast Fourier Transform with Gaussian window function to each slice
-in a stack.
+in a stack. Three result types / scaling options are available: 1) log-scaled
+amplitude squared, rescaled to 8-bit (i.e. ImageJ's default); 2) log-scaled
+amplitude squared as 32-bit float; 3) gamma-scaled amplitude.

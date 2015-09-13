@@ -98,16 +98,23 @@ Fourier Projections (FPJ)
 
 *This check is not turned on by default in the main dialog, since it it
 requires a sample that fills a large porportion of the field of view and is
-mainly intended for diagnosis of hardware issues.* 2D Fourier Transforms of
-the raw data are taken, and projected over all phases and angles. There are
-sliders for channel and time where present.  When features are in-focus and
-their intensities are modulated by the illumination pattern, 2D FFTs of each
-plane in the raw SI data should show 1st and 2nd order spots along a line
-perpendicular to the angle of illumination pattern stripes. Blurred, missing or
-extra spots may indicate problems with the illumination pattern (although
-sparse samples may lack clear spots in the FFT). Note that images with XY sizes
-that are not a power of 2 (256x256, 512x512 and so on are power of 2) require
-padding, which may lead to inferior results.
+mainly intended for diagnosis of hardware issues.*
+
+2D Fourier Transforms of the raw data are taken, and projected over all phases
+and angles. To make best use of the available display range, i.e. to enhance
+the contrast of the relevant features in this projection, the "bright"
+central region containing the offset and low frequencies is masked out.
+Furthermore, a logarithmic display scale of log(Amplitude^2) is used. There
+are sliders for channel and time if present. 
+
+Where features in the raw data are in-focus and their intensities are modulated
+by the illumination pattern, 2D FFTs of each plane in the raw SI data should
+show 1st and 2nd order spots along a line perpendicular to the angle of
+illumination pattern stripes. Blurred, missing or extra spots may indicate
+problems with the illumination pattern (although sparse samples may lack clear
+spots in the FFT).  Note that images with XY sizes that are not a power of 2
+(256x256, 512x512 and so on are power of 2) require padding, which may lead to
+inferior results.
 
 .. _fig2f:
 

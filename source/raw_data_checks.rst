@@ -23,7 +23,7 @@ variation (%)**. This is for a 9-Z window about the central Z-slice. The
 following additional statistics each contribute to the total intensity
 variation, enabling the source of the problem to be identified:
 
-* **average intensity decay per 9 section window (%)**, due to photobleaching 
+* **estimated intensity decay (%)**, due to photobleaching 
 * **maximum intensity difference between angles (%)**, due to miscalibration
 * **relative intensity fluctuations (%)**, due to illumination flicker
 

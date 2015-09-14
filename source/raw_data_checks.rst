@@ -127,7 +127,8 @@ inferior results.
     that fills the field of view. Here the first and second order spots (marked
     in red) are clearly visible and clean/sharp. Note that the plot is
     symmetrical about the centre, with low frequencies in the middle and high
-    frequencies at the edges.
+    frequencies at the edges. The central mask blanking out the bright zero 
+    order / offset peak and low frequencies is marked with a yellow arrow.
 
 
 Modulation Contrast (MCN)

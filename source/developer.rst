@@ -19,14 +19,17 @@ appear in the SIMcheck menu (named starting with ``Raw_`` for raw data checks,
 ``Rec_`` for reconstructed data checks, ``Cal_`` for calibration checks and
 ``Util_`` for utility plugins) , there are a number of supporting classes:
 
-``I1l``
-    class containing static utility methods used throughout other classes
-
 ``DFT1D``
-    hand-coded, multithreaded 1D DFT
+    hand-coded, multithreaded 1D Discrete Fourier Transform
     
 ``FFT2D``
     extension of ImageJ's FHT class, adding new methods (win func, phase..)
+
+``I1l``
+    class containing static utility methods used throughout other classes
+
+``J``
+    a class containing static utility methods not specific to ImageJ
 
 ``OrthoReslicer``
     customized, stripped-down version of ImageJ's Slicer plugin
@@ -34,15 +37,12 @@ appear in the SIMcheck menu (named starting with ``Raw_`` for raw data checks,
 ``Radial_Profile``
     customized version of Paul Baggethun's Radial Profile plugin
 
-``TestData``
-    defines paths to test data for manual ``.main()`` testing of plugins
-
-``J``
-    a class containing static utility methods not specific to ImageJ
-
 ``ResultSet``
     a container for results (images, statistics and information strings)
     with code for auto-generating reports
+
+``TestData``
+    defines paths to test data for manual ``.main()`` testing of plugins
 
 Testing
 -------

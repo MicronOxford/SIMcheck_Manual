@@ -4,8 +4,8 @@ SIM Theory and Glossary of Terms
 Structured Illumination Microscopy achieves optical sectioning at double the
 conventional resolution. This is achieved by collecting data using a series of
 illumination patterns (typically stripes) of different phases and angles [#]_.
-Interference between the illumination pattern and real structures in the image
-leads to observable patterns that report on structural information beyond the
+The illumination pattern interacts with real structures in the image
+leading to observable patterns that report on structural information beyond the
 resolution limit. By systematically sampling all the frequencies necessary to
 produce a super-resolution image in this way, and shifting the high-frequency
 information back to the correct position in frequency space, these separate
@@ -15,6 +15,15 @@ laterally (XY) and axially (Z).
 
 Glossary of Terms & Abbreviations
 ---------------------------------
+
+**DFT**
+    Discrete Fourier Transform
+
+**FFT**
+    Fast Fourier Transform
+
+**LUT**
+    Look Up Table
 
 **SIM**
     Structured illumination Microscopy

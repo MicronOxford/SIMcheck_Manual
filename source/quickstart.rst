@@ -17,7 +17,7 @@ dimenson ordering via the main SIMcheck plugin or the menu option
 .. _fig1a:
 
     .. image:: images/SIMcheckStart.jpg
-        :width: 440px
+        :width: 480px
         :align: center
         :alt: SIMcheck main dialog
 
@@ -47,10 +47,10 @@ containing a summary of the key numerical statistics is displayed.
 .. _fig1b:
 
     .. image:: images/SIMcheckChecks.jpg
-       :width: 57 %
+       :width: 60 %
        :alt: SIMcheck output images
     .. image:: images/SIMcheckLogs.png
-       :width: 41 %
+       :width: 38 %
        :alt: SIMcheck log and summary
 
     **Figure 1b.** SIMcheck output: check output images, log and summary.

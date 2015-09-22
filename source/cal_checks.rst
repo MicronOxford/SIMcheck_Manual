@@ -12,14 +12,17 @@ rotated image, and performing a maximum intensity projection along the
 direction of the stripes. Note that there are 3 alternative methods of
 inputting the first angle:
 
-1. *IJ line selection*: draw a line along one of the stripes from bottom to
-   top, and the angle will be calculated.
-
-2. *degrees (IJ)*: measure the stripe angle for angle 1 yourself, clockwise 
+1. *degrees (IJ)*: measure the stripe angle for angle 1 yourself, clockwise 
    from North.
+
+2. *IJ line selection*: draw a line along one of the stripes from bottom to
+   top, and the angle will be calculated.
 
 3. *radians (OMX)*: use the "Optimum k0 angle" for Direction 1, which can
    be found in the OMX reconstruction log file.
+
+There is also an option to change the assumed direction of rotation from
+angle 1, to angle 2, to angle 3 (default is clockwise).
 
 The separate angles are displayed stacked vertically as a montage. Ideally, the
 cross-section for each illumination stripe should have the appearance of a

@@ -28,6 +28,22 @@ The automatic thresholding method uses the modal intensity value for each
 channel in the stack. The effect should be equivalent to "discarding the
 negative values".
 
+Modulation Contrast Filter
+--------------------------
+
+The Modulation Contrast (MC) Filter reduces high-frequency noise
+artifacts (``hammer finish``) from low modulation/stripe contrast in
+the raw data. This is typically caused by low specific signal and/or
+increased level of background, e.g. from out-of-focus blur. The
+process masks all pixels in the reconstructed dataset where the
+corresponding MCNR values in the raw data MCN map fall below an
+empirically chosen threshold (default setting 4.0; use a higher
+threshold value if the raw data quality is good and a lower threshold
+if the raw data quality is bad). Prior thresholding the MCN map is
+smoothened with a 2D Gaussian filter (default pixel radius 1.0). After
+masking, the reconstructed dataset is blurred with a 3D Gaussian
+filter (default pixel radius 1.0 in xy and z) to smoothen hard edges.
+
 Stack FFT (2D)
 --------------
 
